@@ -1,0 +1,108 @@
+#mini-panel-logo_and_is_search {
+    .harris-container {
+        margin-bottom: 1em;
+    }
+    .harris-column-content-region {
+        min-height: 1px;
+        width: 25.532%;
+        float: left;
+    }
+    .harris-column-content-region-inner {
+        margin-right: 20px;
+    }
+    .harris-column2 {
+        width: 23.404%;
+    }
+    .harris-column2-inner {
+        margin-right: 0;
+    }
+    .harris-content {
+        width: 51.064%;
+    }
+    /* iPhone [portrait + landscape] */
+    @media only screen and (max-width: 1127px) {
+        .harris-column-content-region,
+        .harris-column2,
+        .harris-content {
+            width: 100%;
+            float: none;
+        }
+        .harris-column-content-region-inner {
+            margin-right: 0;
+        }
+    }
+}
+
+/*=================================
+=            is search            =
+=================================*/
+.pane-logo-and-is-search { padding: 0 20px; }
+div#mini-panel-logo_and_is_search {
+    input.form-text {
+        width: 72%;
+        margin-right: 5px;
+        margin-left: 10px;
+        float: left;
+        @include breakpoint(800px) {
+            width: 70%;
+        }
+    }
+    input.form-submit {
+        padding: 10px;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    }
+}
+
+.pane-islandora-solr-simple {
+    max-width: 400px;
+    margin: 0 auto;
+    @include breakpoint(1127px) {
+        margin-top: 83px;
+    }
+}
+
+.lp_search {
+  margin: 72px 0px;
+    @include breakpoint(800px) {
+        padding-top: 0px;
+        width: 465px;
+        float: right;
+        margin: 63px 0px;
+    }
+}
+
+.lp_search {
+        input#edit-islandora-simple-search-query {
+            width: 76%;
+            float: left;
+            margin-right: 10px;
+          @include breakpoint(800px) {
+            width: 250px;
+          }
+        }
+        input#edit-submit {
+            padding: 10px;
+        }
+}
+
+/*-----  End of is search  ------*/
+
+/*==================================
+=            logo block            =
+==================================*/
+
+// .pane-page-logo {
+//   width: 100%;
+//   margin: 0 auto;
+//   @include breakpoint(600px) {width: 400px;}
+// }
+
+.pane-page-logo {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+// gradient
+.l-region--navigation {}
+
+/*-----  End of logo block  ------*/

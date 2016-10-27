@@ -1,0 +1,100 @@
+.page-blog {
+    // .l-main { background: #E4EFF1; margin-bottom: 0px !important; margin-top: -26px; }
+    // .pane-page-content { background: url("/sites/all/themes/diversity/images/waves02.png") no-repeat; background-size: 85%; background-position: 0px 60px;}
+    .field--name-body img {
+        border: 1px solid $teal;
+        padding: 4px;
+        border-radius: 4px;
+        background: #fff;
+    }
+    // .pane-title {
+    //     display: none;
+    // }
+}
+
+.blog .title img {
+    transform: translate(-5px, -20px);
+    -webkit-filter: drop-shadow(7px 10px 7px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(7px 10px 7px rgba(0, 0, 0, 0.5));
+}
+.blog-title h2 {
+    margin-top: 0px;
+}
+
+// .node-type-blog .moscone-footer {
+//   padding: 0 100px;
+// }
+
+article.comment, form.comment-form {
+    @extend .bordered-box;
+    .form-submit {
+        margin: 10px 10px  0 0;
+    }
+    .filter-wrapper {
+        border-top: 1px solid #ddd;
+    }
+}
+
+.blog .teaser {
+    @extend .bordered-box;
+    overflow: auto;
+    .blog-teaser p {
+        margin-bottom: 0px;
+    }
+}
+
+.new-blog-post {
+    // float: right;
+    // text-align: center;
+    // a[href="/node/add/blog"] {
+    //  @extend input[type="submit"];
+    // }
+    // ul {
+    //  padding-left: 0px;  }
+    // li {
+    //  list-style-type: none;
+    // }
+}
+
+// hides the 'new blog post' link at the top of the page but keeps the button
+.blog .action-links {
+    display: none;
+}
+
+.new-blog-post .action-links {
+    display: block !important;
+}
+
+/*====================================
+=            blog archive            =
+====================================*/
+
+
+div.view-collapsible-archive {
+  margin-top: 1em;
+    h3 {
+        cursor: pointer;
+        margin: 0;
+        font-size: 1.2em;
+        font-weight: normal;
+        padding: 6px 0;
+    }
+    ul {
+        list-style: none;
+        padding-left: 16px;
+        width: 362px;
+        margin: 5px 0;
+        /* prevents slide jump in jQuery - modify as needed */
+    }
+    ul li {
+        background: none;
+        line-height: 130%;
+        padding: 3px 0 5px;
+    }
+    span.collapse-icon {
+        font-size: .7em;
+        color: $teal;
+    }
+}
+
+/*-----  End of blog archive  ------*/

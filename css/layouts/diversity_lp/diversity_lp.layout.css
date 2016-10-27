@@ -1,0 +1,147 @@
+/*******************************************************************************
+ * simple.layout.scss
+ *
+ * Styling of the "simple" layout demonstrating the Compass grid extension Susy
+ * and building mobile first layouts.
+ ******************************************************************************/
+/* line 30, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+.l-header,
+.l-main,
+.l-footer {
+  *zoom: 1;
+  max-width: 1190px;
+  max-width: 74.375rem;
+  _width: 1190px;
+  padding-left: 5px;
+  padding-left: 0.3125rem;
+  padding-right: 5px;
+  padding-right: 0.3125rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; }
+  /* line 38, ../../../../../../../../../Users/rdrew/.rvm/gems/ruby-1.9.3-p551@omega.diversity/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .l-header:after,
+  .l-main:after,
+  .l-footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 37, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+.l-region--highlighted,
+.l-region--help,
+.l-region--sidebar-first,
+.l-region--sidebar-second {
+  margin-bottom: 20px; }
+
+@media (min-width: 44em) {
+  /* line 46, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .l-header,
+  .l-main,
+  .l-footer {
+    max-width: 1190px;
+    max-width: 74.375rem; }
+
+  /* line 52, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .l-branding {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%; }
+
+  /* line 55, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .l-region--header {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0; }
+
+  /* line 58, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .l-region--navigation {
+    clear: both; }
+
+  /* line 65, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .has-sidebar-first .l-content,
+  .has-sidebar-second .l-content,
+  .has-two-sidebars .l-content {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%; }
+  /* line 68, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .has-sidebar-first .l-region--sidebar-first,
+  .has-sidebar-first .l-region--sidebar-second,
+  .has-sidebar-second .l-region--sidebar-first,
+  .has-sidebar-second .l-region--sidebar-second,
+  .has-two-sidebars .l-region--sidebar-first,
+  .has-two-sidebars .l-region--sidebar-second {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0; }
+  /* line 72, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .has-sidebar-first .l-region--sidebar-second,
+  .has-sidebar-second .l-region--sidebar-second,
+  .has-two-sidebars .l-region--sidebar-second {
+    clear: right; } }
+@media (min-width: 70em) {
+  /* line 81, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .l-header,
+  .l-main,
+  .l-footer {
+    max-width: 1190px;
+    max-width: 74.375rem; }
+
+  /* line 87, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .l-branding {
+    width: 100%;
+    float: right;
+    margin-right: 0; }
+
+  /* line 90, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .l-region--header {
+    width: 100%;
+    float: right;
+    margin-right: 0; }
+
+  /* line 95, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .has-sidebar-first .l-content {
+    width: 74.68354%;
+    float: right;
+    margin-right: 0; }
+  /* line 98, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .has-sidebar-first .l-region--sidebar-first {
+    width: 24.05063%;
+    float: left;
+    margin-right: 1.26582%; }
+
+  /* line 103, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .has-sidebar-second .l-content {
+    width: 74.68354%;
+    float: left;
+    margin-right: 1.26582%; }
+  /* line 106, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .has-sidebar-second .l-region--sidebar-second {
+    width: 24.05063%;
+    float: right;
+    margin-right: 0;
+    clear: none; }
+
+  /* line 113, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .has-two-sidebars .l-content {
+    width: 49.36709%;
+    float: left;
+    margin-right: 1.26582%;
+    margin-left: 25.31646%; }
+  /* line 117, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .has-two-sidebars .l-region--sidebar-first,
+  .has-two-sidebars .l-region--sidebar-second {
+    width: 24.05063%;
+    float: left;
+    margin-right: 1.26582%; }
+  /* line 121, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .has-two-sidebars .l-region--sidebar-first {
+    margin-left: -75.94937%; }
+  /* line 124, ../../../sass/layouts/diversity_lp/diversity_lp.layout.scss */
+  .has-two-sidebars .l-region--sidebar-second {
+    float: right;
+    margin-right: 0;
+    clear: none; } }
+
+/*# sourceMappingURL=diversity_lp.layout.css.map */

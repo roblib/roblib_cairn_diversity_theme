@@ -1,0 +1,204 @@
+
+
+.responsive-menus.responsified {
+  clear: both;
+  width: 100%;
+  width: 320px;
+  ul.responsive-menus-simple {
+  background: rgb(228, 239, 241);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); 
+
+  border-top: 0px;
+  @include border-radius(0 0 4px);
+}
+}
+
+
+.responsive-menus.responsified span.toggler {
+  padding: 1px;
+  display: block;
+  color: $teal;
+  font-size: 1.35em;
+  // text-align: center;
+  padding-left: 10px;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.responsive-menus.responsified.responsive-toggled span.toggler {
+}
+
+.responsive-menus.responsified .responsive-menus-simple {
+  display: none;
+  width: 100%;
+}
+
+.responsive-menus.responsified.responsive-toggled .responsive-menus-simple,
+.responsive-menus.responsified.responsive-toggled .responsive-menus-simple ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.responsive-menus.responsified.responsive-toggled.absolute {
+  position: relative;
+  z-index: 999;
+}
+
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
+  position: absolute;
+  z-index: 999;
+  top: auto;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li {
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin: 0;
+  clear: both;
+  list-style: none;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li a {
+  color: #fff;
+  display: block;
+  padding: .2em 5%;
+  margin: 0;
+  text-align: left;
+  color: $teal;
+    // text-shadow: 2px 2px 5px rgba(51, 51, 51, 0.6);
+ 
+  // border-bottom: 1px solid #bbb;
+  // border-bottom: 1px solid rgba(255,255,255,0.5);
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+.responsive-menus.responsified .responsive-menus-simple li a.sf-depth-1:before {
+font-family: "diversity_drops";
+  content: '\e807';
+  color: #3F9BA9;
+  margin-right: 3px;
+}
+
+
+.responsive-menus.responsified .responsive-menus-simple li a.sf-depth-2 {
+  color: #333;
+  text-shadow: 2px 2px 5px rgba(51, 51, 51, 0.6);
+
+}
+
+.responsive-menus.responsified .responsive-menus-simple>li.last a {
+  border-bottom: none;
+}
+.responsive-menus.responsified .responsive-menus-simple .icon {
+display: none;}
+
+
+.responsive-menus.responsified .responsive-menus-simple li ul li a {
+      padding: .2em 0 .2em 10%; 
+  font-size: .8em;
+    font-weight: normal;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li ul li ul li a {
+  //   padding: .5em 0 .5em 10%; 
+  // font-size: 1em;
+  font-weight: normal;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li ul {
+  display: block !important;
+  visibility: visible !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Inactive rule */
+.responsive-menus span.toggler {
+  display: none;
+}
+
+
+.responsive-menus.responsified {
+  li.sf-item-1,
+li.sf-item-2,
+li.sf-item-3,
+li.sf-item-4,
+li.sf-item-5,
+li.sf-item-6 {
+    ul {
+        width: 100% !important;
+        border: 0px;
+    }
+}
+}
+
+// .responsive-menus.responsified span.toggler {
+//   padding: 1px;
+//   display: block;
+//   background: #DBECEF;
+//   color: $teal;
+//   border-radius: 0px;
+//   box-shadow: none;
+//   font-size: 1.35em;
+//   text-align: center;
+//   cursor: pointer;
+//   outline: none;
+//   border-bottom: 1px solid $teal !important;
+// }
+
+// .responsive-menus.responsified .responsive-menus-simple li ul {
+//   border: 0px;
+// }
+// .responsive-menus.responsified .responsive-menus-simple li a {
+//   font-size: 1em;
+// }
+// .responsive-menus.responsified .responsive-menus-simple li a.sf-depth-1 {
+// }
+// .responsive-menus.responsified .responsive-menus-simple li a.sf-depth-2 {
+// }
+
+
+// .responsive-menus.responsified .responsive-menus-simple {
+//   display: none;
+//   width: 100%;
+//   border-bottom-right-radius: 4px;
+//   border-bottom-left-radius: 4px;
+//   box-shadow: none;
+//   background: #DBECEF;
+//   color: $teal;
+// }
+
+// .responsive-menus.responsified .responsive-menus-simple li a {
+//   display: block;
+//   padding: .8em 5%;
+//   margin: 0;
+//   text-align: left;
+//   color: $teal;
+//   border-bottom: 1px solid $teal;
+//   text-decoration: none;
+//   text-transform: none;
+// }
+
+// .responsive-menus.responsified .responsive-menus-simple li a.home.sf-depth-1 {
+//     /* padding: 0px; */
+// }
+// .responsive-menus.responsified .responsive-menus-simple li a.home.sf-depth-2 {
+//     padding: .8em 5%;
+// }
+
+
+// .responsive-menus.responsified .responsive-menus-simple li ul li a {
+//   // padding: 1em 0 1em 10%;
+//   padding: .8em 5%;
+// }
+// .responsive-menus.responsified ul {
+//   font-size: 1em;
+// }
+
+
+

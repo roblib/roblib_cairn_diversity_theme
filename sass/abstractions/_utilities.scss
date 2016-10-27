@@ -1,0 +1,37 @@
+.clear-float {
+	clear: both;
+}
+
+.droplet-list { list-style-type: none; // margin: 0px; padding: 0px; font-size: 1em;
+	i.icon { transform: translate(-3px, 13px); font-size: .8em; color: rgb(63, 155, 169); -webkit-filter: drop-shadow(7px 10px 7px rgba(0, 0, 0, 0.5)); filter: drop-shadow(7px 10px 7px rgba(0, 0, 0, 0.5)); }
+	li { margin-bottom: 1em; }
+}
+
+div#admin-menu ul {
+  font-size: 1em;
+}
+
+
+.bordered-box {
+	background: rgba(255, 255, 255, 0.53);
+    border: 1px solid #DFDDDD;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+@mixin button-shadow {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.white #content-pane {
+    background: #fff;
+    padding: 5px 10px;
+}
+
+.layout-table td {
+	border-bottom: 0px;
+	@include breakpoint(max-width 800px) {
+		display: table-row;
+	}
+}

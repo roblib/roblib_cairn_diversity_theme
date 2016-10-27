@@ -1,0 +1,53 @@
+/* Tabs */
+.tabs {
+    a {
+        background-color: #fff;
+        text-decoration: none;
+        border: 1px solid $teal;
+        border-radius: 4px;
+    }
+    a.active {
+        background-color: $teal;
+        color: #fff;
+    }
+    a:hover, a:focus {
+        background-color: $teal;
+        color: #fff;
+    }
+}
+
+/* Primary Tabs */
+.tabs--primary {
+    margin-bottom: 1em;
+    border-bottom: 0px;
+    // margin-left: 40px;
+    li {
+        margin-right: .5em;
+    }
+    a {
+        padding: .1em .4em;
+    }
+}
+
+/* Secondary Tabs */
+.tabs--secondary a {
+    padding: 0.2em 0.5em;
+    margin: 0.4em 0;
+    font-size: 0.9em;
+}
+
+.panel-pane.pane-pane-messages {
+    padding-left: 58px;
+    padding-top: 10px;
+}
+
+.landing_page .panel-pane.pane-pane-messages {
+    padding: 5px 76px 0px;
+}
+
+.button {
+    @extend button;
+    padding: 0.4em .6em;
+    font-weight: 100;
+}
+

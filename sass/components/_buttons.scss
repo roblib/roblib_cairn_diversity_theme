@@ -1,0 +1,15 @@
+@mixin button-shadow {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+button, .button {
+@include button-shadow
+}
+
+ul.tabs li a {
+@include button-shadow
+}
+
+input#edit-submit {
+@include button-shadow
+}

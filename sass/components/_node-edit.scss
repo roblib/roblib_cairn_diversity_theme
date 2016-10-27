@@ -1,0 +1,34 @@
+.page-node-edit, .page-node-add {
+	.l-main {
+		background-color: #E4EFF1;
+		padding: 20px;
+	}
+	.node-form input.form-submit {
+		margin-right: 10px;
+	}
+	[value="Save"] {
+
+	}
+	.vertical-tabs.clearfix {
+  font-size: smaller;
+}
+}
+.vertical-tabs ul.vertical-tabs-list {
+  width: 12em;
+  list-style: none;
+  list-style-image: none; /* IE6 */
+  border-top: 1px solid #ccc;
+  padding: 0;
+  position: relative; /* IE6 */
+  margin: -1px 0 -1px -12em; /* LTR */
+  float: left; /* LTR */
+}
+
+.vertical-tabs ul.vertical-tabs-list li.selected {
+  background-color: #f7f7f7;
+  border-right-width: 0;
+}
+.vertical-tabs {
+  background-color: #f7f7f7;
+  border-right-width: 0;
+}

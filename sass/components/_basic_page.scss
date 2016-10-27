@@ -1,0 +1,101 @@
+.basic-pages .pane-title {
+    display: none;
+}
+
+.title_with_icon p {
+    display: inline-block;
+}
+
+.title_with_icon h1 {
+    display: inline-block;
+    width: 86%;
+    vertical-align: top;
+}
+
+/*.basic-pages*/
+
+.l-main {
+    background: #E4EFF1;
+    margin-bottom: 0px !important;
+    @include breakpoint(1127px) {
+        // margin-top: -26px;
+    }
+}
+
+.basic-pages .pane-page-content {
+    // background: url("/sites/all/themes/diversity/images/waves02.png") no-repeat;
+    // background-size: 85%;
+    // background-position: 0px 30px;
+    // // padding-left: 40px;
+    //   background-repeat: repeat-y;
+}
+
+.basic-pages .title img {
+    transform: translate(0px, -4px);
+    -webkit-filter: drop-shadow(7px 10px 7px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(7px 10px 7px rgba(0, 0, 0, 0.5));
+    width: 40px;
+}
+
+.basic-pages .pane-node-body {
+    // margin: 20px 50px;
+}
+
+/*.basic-pages*/
+
+.l-main {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.l-content {
+    padding: 0 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.l-content h1:before {
+    font-family: "diversity_drops";
+    content: '\e805';
+    color: $teal;
+    text-shadow: 2px 2px 5px rgba(51, 51, 51, 0.6);
+}
+
+/*==========  layout of the translate switch on the home and about pages  ==========*/
+
+.translate-switch {
+    .menu {
+
+        @include horizontal-list(5px);
+        // width: 226px;
+        margin-bottom: 20px;
+        @include breakpoint(1140px) {
+          margin: 0px;
+            float: right;
+        }
+    }
+    .menu .leaf {
+        list-style-image: none;
+        list-style-type: none;
+    }
+}
+
+@include breakpoint(1140px) {
+    .page-node-78 /*en-landing page*/,
+    .page-node-76 /*fr-landing page*/,
+    .page-node-12 /*en-about page*/,
+    .page-node-43 /*fr-about page*/{ 
+        .title_with_icon {
+            @include grid-span(10, 1);
+        }
+        .translate-switch {
+            @include grid-span(2, 11);
+            padding-top: 14px;
+        }
+        .pane-node-body {
+            clear: both;
+        }
+    }
+}

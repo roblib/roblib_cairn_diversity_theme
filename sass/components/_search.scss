@@ -1,0 +1,20 @@
+
+
+// search results
+.page-islandora-search .pane-title {
+  margin-top: 0px;
+  padding-top: 40px;
+}
+
+// result count on search results page
+div#islandora-solr-top {
+  padding: 10px 0px 0px 10px;
+}
+
+.islandora-solr-facet-wrapper {
+  border-bottom: 1px dashed #ccc;
+}
+
+input#edit-islandora-simple-search-query {
+  font-size: 1em;
+}

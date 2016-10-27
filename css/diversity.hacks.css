@@ -1,0 +1,19 @@
+@media all and (max-width: 800px) {
+  /* line 3, ../sass/diversity.hacks.scss */
+  #toolbar, #admin-menu {
+    display: none; }
+
+  /* line 8, ../sass/diversity.hacks.scss */
+  html body.toolbar, html body.admin-menu {
+    padding-top: 0 !important;
+    margin-top: 0 !important; } }
+@media all and (max-width: 1200px) {
+  /* line 16, ../sass/diversity.hacks.scss */
+  .pane-pane-messages {
+    display: none; } }
+@media all and (max-width: 800px) {
+  /* line 23, ../sass/diversity.hacks.scss */
+  .l-footer {
+    display: none; } }
+
+/*# sourceMappingURL=diversity.hacks.css.map */

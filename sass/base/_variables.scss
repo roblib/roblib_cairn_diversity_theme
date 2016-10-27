@@ -1,0 +1,44 @@
+// Typography
+@import url(http://fonts.googleapis.com/css?family=Antic);
+// @import url(http://fonts.googleapis.com/css?family=Gentium+Basic&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
+
+// $base-font-family: $helvetica;
+// $heading-font-family: $base-font-family;
+// $base-font-family: 'Antic', sans-serif;
+$base-font-family: 'Open Sans', sans-serif;
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: .85em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #477dca;
+$light-blue: #d2e5eb;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+$teal: #3F9BA9;
+
+// Font Colors
+$base-background-color: #fff;
+$base-font-color: $dark-gray;
+$action-color: $teal;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);

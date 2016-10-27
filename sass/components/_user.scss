@@ -1,0 +1,22 @@
+.page-user {
+    .l-main {
+        background: #E4EFF1;
+        margin-bottom: 0px !important;
+        // margin-top: -26px;
+        padding-left: 56px;
+        padding-right: 56px; 
+        padding-bottom: 40px;
+   
+    }
+    .l-content {
+        background: url("/sites/all/themes/diversity/images/waves02.png") no-repeat;
+        background-size: 85%;
+        background-position: 0px 30px;
+        // padding-left: 40px;
+        background-repeat: repeat-y;
+
+    }
+    form#user-login {
+  width: 300px;
+}
+}

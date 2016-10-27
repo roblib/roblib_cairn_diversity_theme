@@ -1,0 +1,59 @@
+.content-box {
+    background: #fff;
+}
+
+.partner-logos {
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    .row {
+        // border-bottom: 1px solid #ccc;
+        padding-top: 13px;
+        // &:last-child {
+        //  border-bottom: 0px;
+        // }
+   
+    }
+    .col-md-6 {
+        padding-top: 20px;
+    }
+}
+
+/*========================================
+=            curated exhibits            =
+========================================*/
+.curated-exhibits {
+    background: none;
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .card {
+        min-height: 500px;
+        background-color: #fff;
+        margin-bottom: 26px;
+        border: 1px solid #dfdddd;
+    }
+    .footsteps {
+    min-height: 455px;
+}
+    .image {
+        border: 5px solid #3F9BA9;
+        // width: 537px;
+        // height: 359px;
+        overflow: hidden;
+    }
+    span.caption {
+        padding: 5px;
+        display: block;
+        font-size: 1.2em;
+        a {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+    }
+}
+
+/*-----  End of curated exhibits  ------*/

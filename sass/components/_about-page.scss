@@ -1,0 +1,9 @@
+.logo-aside {
+  border: 2px solid rgb(79, 155, 167);
+  padding: 10px;
+  color: rgb(79, 155, 167);
+  width: 300px;
+  float: right;
+    margin-top: 43px;
+    @extend .bordered-box;
+}

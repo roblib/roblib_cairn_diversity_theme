@@ -1,0 +1,21 @@
+.page-contact {
+    .l-main {
+        background: #E4EFF1;
+        margin-bottom: 0px !important;
+    }
+}
+
+form#contact-site-form {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.53);
+    font-size: 1.2em;
+}
+
+.page-contact h1:before {
+    font-family: "diversity_drops";
+    content: '\e805';
+    color: $teal;
+    text-shadow: 2px 2px 5px rgba(51, 51, 51, 0.6);
+}

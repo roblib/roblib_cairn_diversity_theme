@@ -1,0 +1,305 @@
+/**
+ * @file
+ * Moscone Flipped panel layout
+**/
+
+.moscone-flipped-container {
+    margin-bottom: 1em;
+}
+
+.moscone-flipped-content {
+    min-height: 1px;
+    width: 68.085%;
+    float: left;
+}
+
+.moscone-flipped-content-inner {
+    margin-right: 20px;
+}
+
+.moscone-flipped-sidebar {
+    min-height: 1px;
+    width: 31.915%;
+    float: left;
+}
+
+/* iPhone [portrait + landscape] */
+@media only screen and (max-width: 800px) {
+    .moscone-flipped-sidebar, .moscone-flipped-content {
+        width: 100%;
+        float: none;
+    }
+    .moscone-flipped-content-inner {
+        margin-right: 0;
+    }
+}
+
+/*================================
+=            top menu            =
+================================*/
+
+.header-menu .sf-main-menu {
+    @include horizontal-list(20px);
+    padding-left: 20px;
+    padding-top: 20px;
+    li {
+        list-style-image: none;
+        list-style-type: none;
+        @include breakpoint(940px) {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+
+        @include breakpoint(1140px) {
+            padding-left: 56px;
+            padding-right: 56px;
+        }
+    }
+    a {
+        font-size: 1em;
+        font-weight: 100;
+        text-shadow: 2px 2px 5px rgba(51, 51, 51, 0.6);
+        color: #333;
+        &:hover {
+            color: $teal;
+        }
+        &.active i {
+            color: $teal;
+        }
+    }
+    .icon {
+        color: #3F9BA9;
+    }
+    .sf-sub-indicator {
+        background: url("/sites/diversity.new.cairnrepo.org/files/arrows-777777.png") no-repeat -10px -100px;
+    }
+}
+
+.l-header {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.header-menu {
+    background-color: rgb(228, 239, 241);
+    @include breakpoint(750px) {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.landing_page .header-menu {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    border-right: 0px;
+    border-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    @include breakpoint(850px) {
+        background-color: initial;
+        box-shadow: none;
+        border-bottom: 0px;
+    }
+}
+
+// superfish menus
+
+.header-menu .sf-main-menu li.sf-depth-2 {
+    padding: 0;
+    margin: .4em .4em .4em 0;
+}
+
+.sf-main-menu a > .sf-sub-indicator {
+    top: .9em;
+    background-position: 0 -100px;
+}
+
+// li.sf-item-1, li.sf-item-2, li.sf-item-3, li.sf-item-4, li.sf-item-5, li.sf-item-6 {
+//     ul {
+//         width: 300px !important;
+//         border: 1px solid $teal;
+//         @include border-radius(4px);
+//     }
+// }
+
+.sf-menu li {
+    ul {
+        width: 300px !important;
+        border: 1px solid $teal;
+        @include border-radius(4px);
+        margin-top: 2px;
+    }
+}
+
+.sf-item-2 span.sf-sub-indicator {
+    right: 1em;
+}
+
+.sf-item-3 span.sf-sub-indicator {
+    right: 2em;
+}
+
+.sf-item-4 span.sf-sub-indicator {
+    right: 4em;
+}
+
+.sf-menu li:hover ul, .sf-menu li.sfHover ul {
+    left: 0;
+    top: 1.2em;
+    background: #fff;
+    padding: 5px;
+}
+
+.sf-menu li:hover ul a, .sf-menu li.sfHover ul a {
+    font-size: .8em;
+}
+
+/*==========  menu icons  ==========*/
+.home i.icon {
+    transform: translate(-2px, 2px);
+}
+
+.about i.icon {
+    transform: translate(8px, -10px);
+}
+
+.partners i.icon {}
+
+.team i.icon {
+    transform: translate(7px, -11px);
+}
+
+.contact i.icon {
+    transform: translate(-7px, 2px);
+}
+
+/*-----  End of top menu  ------*/
+.node-type-primary-pages {}
+
+.l-header {
+    margin-bottom: 0px !important;
+    // gradient
+    background: #489ead;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #489ead 11%, white 74%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(11%, #489ead), color-stop(74%, white));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #489ead 11%, white 74%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #489ead 11%, white 74%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #489ead 11%, white 74%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #489ead 11%, white 74%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#489ead', endColorstr='#ffffff',GradientType=0 );
+    /* IE6-9 */
+}
+
+.primary-pages .pane-title {
+    display: none;
+}
+
+.primary-pages .l-main {
+    background: #E4EFF1;
+    margin-bottom: 0px !important;
+    @include breakpoint(1127px) {
+        margin-top: -26px;
+    }
+}
+
+// .primary-pages .pane-page-content,  {
+//     background: url("/sites/all/themes/diversity/images/waves02.png") no-repeat;
+//     background-size: 85%;
+//     background-position: 0px 30px;
+//     background-repeat: repeat-y;
+// }
+
+// .l-content {
+//      background: url("/sites/all/themes/diversity/images/waves02.png") no-repeat;
+//     background-size: 85%;
+//     background-position: 0px 30px;
+//     background-repeat: repeat-y;
+// }
+
+.l-footer {
+    padding-top: 10px;
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, white 26%, #489ead 89%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(26%, white), color-stop(89%, #489ead));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, white 26%, #489ead 89%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, white 26%, #489ead 89%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, white 26%, #489ead 89%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, white 26%, #489ead 89%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#489ead',GradientType=0 );
+    /* IE6-9 */
+}
+
+.l-header,
+.l-main,
+.l-footer {
+    // box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+    border-left: 1px solid #DFDDDD;
+    border-right: 1px solid #DFDDDD;
+}
+
+.primary-pages .image-right {
+    padding-top: 20px;
+}
+
+// @include breakpoint(800px) {
+//     .title, .sub-title, .text-left {
+//         margin-left: 60px;
+//     }
+//     .text-left {
+//         margin-left: 100px;
+//         margin-top: 50px;
+//     }
+//     .text-bottom {
+//         margin-left: 40px;
+//         margin-right: 40px;
+//     }
+// }
+
+
+.title { .active { color: #333; }
+}
+.sub-title h2 { text-transform: uppercase; font-size: 1.3em; }
+.primary-pages { h1, h2 { margin-bottom: 0px; }
+  ul { margin-top: 0px; }
+}
+.title h1 { margin: 0; padding-top: 10px; }
+
+// title image
+.primary-pages .title img { transform: translate(0px, -4px); -webkit-filter: drop-shadow(7px 10px 7px rgba(0, 0, 0, 0.5)); width: 40px; }
+.pane-page-content .field--name-body img { border: 1px solid $teal; padding: 4px; border-radius: 4px; background: #fff; }
+
+/* ==========================================================================
+   footer
+   ========================================================================== */
+div#mini-panel-diversity_footer { margin: 0 20px; }
+.cbu_logo { width: 63%; }
+.can_gov_logo {
+    border: 1px solid rgb(204, 204, 204);
+    background-color: #fff;
+    padding: 8px 5px 0px 5px;
+    border-radius: 4px;
+    margin-top: 3em;
+    margin-bottom: 5px;
+
+    img {
+        width: 100%;
+    }
+}
+.can_gov_logo p { margin: 0px; padding: 0px; }
+
+.creative_commons a {
+  color: #fff;
+}

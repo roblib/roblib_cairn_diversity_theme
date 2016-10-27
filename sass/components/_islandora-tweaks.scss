@@ -1,0 +1,222 @@
+.islandora-pdf-content {
+    width: 100%;
+}
+
+ul.tabs a[href*="print_object"]::before {
+    content: "Print";
+}
+
+img#print_btn {
+    display: none;
+}
+
+.page-islandora {
+    .l-main {
+        // margin-top: -26px;
+    }
+    h1 {
+        margin-top: 0px;
+        display: block;
+        float: left;
+        // @include clearfix;
+    }
+    .tabs--primary {
+        clear: both;
+    }
+}
+
+.islandora-basic-collection a {
+  font-size: 1.2em;
+}
+/*==============================================================
+=            adds droplet to the arcive page titles            =
+==============================================================*/
+
+.page-islandora h1:before {
+    font-family: "diversity_drops";
+    content: '\e805';
+    color: $teal;
+    text-shadow: 2px 2px 5px rgba(51, 51, 51, 0.6);
+}
+
+
+
+/*-----  End of adds droplet to the arcive page titles  ------*/
+
+.page-islandora .l-main {
+    background: #E4EFF1;
+    margin-bottom: 0px !important;
+    padding-top: 20px;
+}
+
+.page-islandora .pane-page-content {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.islandora-basic-collection-wrapper, .islandora {
+    border: 1px solid #dfdddd;
+    border-radius: 4px;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.islandora-basic-collection-wrapper .islandora {
+    border: none;
+}
+
+span.islandora-compound-caption {
+    font-size: 1.2em;
+    color: $teal;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.islandora-compound-thumb {
+    max-width: 100% !important;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    border-bottom: 0px;
+    padding-bottom: 1em;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0 10px 10px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    img {
+        float: none;
+        max-width: 92%;
+        clear: none;
+    }
+    .islandora-compound-caption {
+        max-width: 100%;
+        float: none;
+        line-height: 1.25em;
+        margin: 0.5em 0;
+        display: block;
+    }
+}
+
+.islandora-compound-thumbs {
+    border-top: 0px;
+}
+
+.islandora-compound-thumbs img:hover {
+    border: 2px solid $teal;
+}
+
+.islandora-compound-thumbs img.active {
+    border: 2px solid $teal;
+}
+
+div#block-islandora-solr-basic-facets {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+div#block-islandora-solr-basic-facets li {
+    font-size: .8em;
+}
+
+/*===============================================
+=            basic image page styles            =
+===============================================*/
+
+.islandora-basic-image-content-wrapper.clearfix {
+    float: left;
+    margin-right: 30px;
+}
+
+.islandora-solr-metadata-sidebar h2:nth-child(1) {
+    margin-top: 0px;
+}
+
+.islandora-basic-image-metadata {
+    @include breakpoint(1127px) {
+        clear: none;
+        float: left;
+        width: 40%;
+    }
+}
+
+.islandora-basic-image-object.islandora {
+    overflow: auto;
+}
+
+/*-----  End of basic image page styles  ------*/
+
+// hack
+.page-islandora h2.pane-title {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+/*================================================
+=            list/grid view selectors            =
+================================================*/
+
+.islandora-basic-collection-display-switch {
+    ul {
+        margin: 2px;
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        border: 1px solid $teal;
+        padding: 2px 4px;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+    a.active {
+        background-color: $teal;
+        color: #fff;
+    }
+    a:hover {
+        background-color: $teal;
+        color: #fff;
+    }
+}
+
+/*-----  End of list/grid view selectors  ------*/
+
+/*===================================
+=            book reader            =
+===================================*/
+
+// jquery css was conlficting with the controls
+div#BRpage {
+    width: 300px;
+}
+
+div#BRpager {
+    background: none;
+    border: 0px;
+}
+
+/*-----  End of book reader  ------*/
+
+// video player
+.video-js {
+    max-width: 100%;
+}
+
+.islandora-audio-content {
+    background-color: #F2F2F2;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 15px;
+    width: auto;
+    max-width: 100%;
+    float: none;
+    width: 672px;
+    margin: 0 auto;
+}
